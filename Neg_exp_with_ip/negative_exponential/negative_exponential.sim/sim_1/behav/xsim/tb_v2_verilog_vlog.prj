@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../negative_exponential.ip_user_files/ipstatic" \
+"../../../../negative_exponential.srcs/sources_1/new/exp_imp_v2.v" \
+"../../../../negative_exponential.srcs/sim_1/new/tb_v2.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
