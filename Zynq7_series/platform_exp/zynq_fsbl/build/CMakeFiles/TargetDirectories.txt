@@ -1,0 +1,3 @@
+C:/Aakarsh_Files/Implementation-on-Zedboard/Zynq7_series/platform_exp/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/Aakarsh_Files/Implementation-on-Zedboard/Zynq7_series/platform_exp/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+C:/Aakarsh_Files/Implementation-on-Zedboard/Zynq7_series/platform_exp/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

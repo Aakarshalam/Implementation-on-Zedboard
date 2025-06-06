@@ -1,9 +1,9 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Thu Jun  5 11:02:56 2025
-// Host        : LAPTOP-BUVLRENO running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+// Date        : Thu Jun  5 22:41:02 2025
+// Host        : DESKTOP-F2ROL01 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_overall_axi_1_0_sim_netlist.v
 // Design      : design_1_overall_axi_1_0
@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_overall_axi_1_0,overall_axi_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "overall_axi_v1_0,Vivado 2023.2" *) 
+(* CHECK_LICENSE_TYPE = "design_1_overall_axi_1_0,overall_axi_v1_0,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "overall_axi_v1_0,Vivado 2024.2" *) 
 (* NotValidForBitStream *)
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
    (s00_axi_aclk,
@@ -37,9 +37,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
     s00_axi_rresp,
     s00_axi_rvalid,
     s00_axi_rready);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) input [4:0]s00_axi_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input s00_axi_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 5, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [4:0]s00_axi_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWREADY" *) output s00_axi_awready;
@@ -57,7 +57,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RDATA" *) output [31:0]s00_axi_rdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]s00_axi_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output s00_axi_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 5, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 1e+08, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input s00_axi_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) input s00_axi_rready;
 
   wire \<const0> ;
   wire s00_axi_aclk;
@@ -105,78 +105,79 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
-   (valid_stage2,
+   (P,
     o_valid,
-    \y_reg[31]_0 ,
+    valid_stage1,
+    valid_stage2,
     Q,
     s00_axi_aclk,
     B,
-    prod2_stage20_0,
+    prod2_stage2_reg_0,
     prod3_stage3,
-    prod3_stage30_0,
+    y_reg_0,
     valid_stage1_reg_0);
-  output valid_stage2;
+  output [31:0]P;
   output o_valid;
-  output [31:0]\y_reg[31]_0 ;
+  output valid_stage1;
+  output valid_stage2;
   input [0:0]Q;
   input s00_axi_aclk;
   input [9:0]B;
-  input [15:0]prod2_stage20_0;
+  input [15:0]prod2_stage2_reg_0;
   input prod3_stage3;
-  input [12:0]prod3_stage30_0;
+  input [12:0]y_reg_0;
   input valid_stage1_reg_0;
 
   wire [15:0]A;
   wire [9:0]B;
+  wire [31:0]P;
   wire [0:0]Q;
   wire o_valid;
-  wire [15:0]prod2_stage20_0;
-  wire prod2_stage20_n_100;
-  wire prod2_stage20_n_101;
-  wire prod2_stage20_n_102;
-  wire prod2_stage20_n_103;
-  wire prod2_stage20_n_104;
-  wire prod2_stage20_n_105;
-  wire prod2_stage20_n_74;
-  wire prod2_stage20_n_91;
-  wire prod2_stage20_n_92;
-  wire prod2_stage20_n_93;
-  wire prod2_stage20_n_94;
-  wire prod2_stage20_n_95;
-  wire prod2_stage20_n_96;
-  wire prod2_stage20_n_97;
-  wire prod2_stage20_n_98;
-  wire prod2_stage20_n_99;
+  wire [15:0]prod2_stage2_reg_0;
+  wire prod2_stage2_reg_n_100;
+  wire prod2_stage2_reg_n_101;
+  wire prod2_stage2_reg_n_102;
+  wire prod2_stage2_reg_n_103;
+  wire prod2_stage2_reg_n_104;
+  wire prod2_stage2_reg_n_105;
+  wire prod2_stage2_reg_n_91;
+  wire prod2_stage2_reg_n_92;
+  wire prod2_stage2_reg_n_93;
+  wire prod2_stage2_reg_n_94;
+  wire prod2_stage2_reg_n_95;
+  wire prod2_stage2_reg_n_96;
+  wire prod2_stage2_reg_n_97;
+  wire prod2_stage2_reg_n_98;
+  wire prod2_stage2_reg_n_99;
   wire prod3_stage3;
-  wire [12:0]prod3_stage30_0;
-  wire [31:0]prod3_stage3__0;
   wire s00_axi_aclk;
   wire valid_stage1;
   wire valid_stage1_reg_0;
   wire valid_stage2;
-  wire [31:0]\y_reg[31]_0 ;
-  wire NLW_prod2_stage20_CARRYCASCOUT_UNCONNECTED;
-  wire NLW_prod2_stage20_MULTSIGNOUT_UNCONNECTED;
-  wire NLW_prod2_stage20_OVERFLOW_UNCONNECTED;
-  wire NLW_prod2_stage20_PATTERNBDETECT_UNCONNECTED;
-  wire NLW_prod2_stage20_PATTERNDETECT_UNCONNECTED;
-  wire NLW_prod2_stage20_UNDERFLOW_UNCONNECTED;
-  wire [29:0]NLW_prod2_stage20_ACOUT_UNCONNECTED;
-  wire [17:0]NLW_prod2_stage20_BCOUT_UNCONNECTED;
-  wire [3:0]NLW_prod2_stage20_CARRYOUT_UNCONNECTED;
-  wire [47:32]NLW_prod2_stage20_P_UNCONNECTED;
-  wire [47:0]NLW_prod2_stage20_PCOUT_UNCONNECTED;
-  wire NLW_prod3_stage30_CARRYCASCOUT_UNCONNECTED;
-  wire NLW_prod3_stage30_MULTSIGNOUT_UNCONNECTED;
-  wire NLW_prod3_stage30_OVERFLOW_UNCONNECTED;
-  wire NLW_prod3_stage30_PATTERNBDETECT_UNCONNECTED;
-  wire NLW_prod3_stage30_PATTERNDETECT_UNCONNECTED;
-  wire NLW_prod3_stage30_UNDERFLOW_UNCONNECTED;
-  wire [29:0]NLW_prod3_stage30_ACOUT_UNCONNECTED;
-  wire [17:0]NLW_prod3_stage30_BCOUT_UNCONNECTED;
-  wire [3:0]NLW_prod3_stage30_CARRYOUT_UNCONNECTED;
-  wire [47:32]NLW_prod3_stage30_P_UNCONNECTED;
-  wire [47:0]NLW_prod3_stage30_PCOUT_UNCONNECTED;
+  wire valid_stage2_i_1_n_0;
+  wire [12:0]y_reg_0;
+  wire NLW_prod2_stage2_reg_CARRYCASCOUT_UNCONNECTED;
+  wire NLW_prod2_stage2_reg_MULTSIGNOUT_UNCONNECTED;
+  wire NLW_prod2_stage2_reg_OVERFLOW_UNCONNECTED;
+  wire NLW_prod2_stage2_reg_PATTERNBDETECT_UNCONNECTED;
+  wire NLW_prod2_stage2_reg_PATTERNDETECT_UNCONNECTED;
+  wire NLW_prod2_stage2_reg_UNDERFLOW_UNCONNECTED;
+  wire [29:0]NLW_prod2_stage2_reg_ACOUT_UNCONNECTED;
+  wire [17:0]NLW_prod2_stage2_reg_BCOUT_UNCONNECTED;
+  wire [3:0]NLW_prod2_stage2_reg_CARRYOUT_UNCONNECTED;
+  wire [47:31]NLW_prod2_stage2_reg_P_UNCONNECTED;
+  wire [47:0]NLW_prod2_stage2_reg_PCOUT_UNCONNECTED;
+  wire NLW_y_reg_CARRYCASCOUT_UNCONNECTED;
+  wire NLW_y_reg_MULTSIGNOUT_UNCONNECTED;
+  wire NLW_y_reg_OVERFLOW_UNCONNECTED;
+  wire NLW_y_reg_PATTERNBDETECT_UNCONNECTED;
+  wire NLW_y_reg_PATTERNDETECT_UNCONNECTED;
+  wire NLW_y_reg_UNDERFLOW_UNCONNECTED;
+  wire [29:0]NLW_y_reg_ACOUT_UNCONNECTED;
+  wire [17:0]NLW_y_reg_BCOUT_UNCONNECTED;
+  wire [3:0]NLW_y_reg_CARRYOUT_UNCONNECTED;
+  wire [47:32]NLW_y_reg_P_UNCONNECTED;
+  wire [47:0]NLW_y_reg_PCOUT_UNCONNECTED;
 
   FDRE o_valid_reg
        (.C(s00_axi_aclk),
@@ -196,7 +197,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
     .B_INPUT("DIRECT"),
     .CARRYINREG(0),
     .CARRYINSELREG(0),
-    .CREG(1),
+    .CREG(0),
     .DREG(1),
     .INMODEREG(0),
     .MASK(48'h3FFFFFFFFFFF),
@@ -210,20 +211,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
     .USE_MULT("MULTIPLY"),
     .USE_PATTERN_DETECT("NO_PATDET"),
     .USE_SIMD("ONE48")) 
-    prod2_stage20
-       (.A({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,prod2_stage20_0}),
+    prod2_stage2_reg
+       (.A({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,prod2_stage2_reg_0}),
         .ACIN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .ACOUT(NLW_prod2_stage20_ACOUT_UNCONNECTED[29:0]),
+        .ACOUT(NLW_prod2_stage2_reg_ACOUT_UNCONNECTED[29:0]),
         .ALUMODE({1'b0,1'b0,1'b0,1'b0}),
         .B({1'b0,1'b0,B[9:8],B[8],B[8],B[8],B[8],B[8],B[8:0]}),
         .BCIN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .BCOUT(NLW_prod2_stage20_BCOUT_UNCONNECTED[17:0]),
+        .BCOUT(NLW_prod2_stage2_reg_BCOUT_UNCONNECTED[17:0]),
         .C({1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
         .CARRYCASCIN(1'b0),
-        .CARRYCASCOUT(NLW_prod2_stage20_CARRYCASCOUT_UNCONNECTED),
+        .CARRYCASCOUT(NLW_prod2_stage2_reg_CARRYCASCOUT_UNCONNECTED),
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
-        .CARRYOUT(NLW_prod2_stage20_CARRYOUT_UNCONNECTED[3:0]),
+        .CARRYOUT(NLW_prod2_stage2_reg_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
         .CEA2(Q),
         .CEAD(1'b0),
@@ -241,14 +242,14 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
         .MULTSIGNIN(1'b0),
-        .MULTSIGNOUT(NLW_prod2_stage20_MULTSIGNOUT_UNCONNECTED),
+        .MULTSIGNOUT(NLW_prod2_stage2_reg_MULTSIGNOUT_UNCONNECTED),
         .OPMODE({1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b1}),
-        .OVERFLOW(NLW_prod2_stage20_OVERFLOW_UNCONNECTED),
-        .P({NLW_prod2_stage20_P_UNCONNECTED[47:32],prod2_stage20_n_74,A,prod2_stage20_n_91,prod2_stage20_n_92,prod2_stage20_n_93,prod2_stage20_n_94,prod2_stage20_n_95,prod2_stage20_n_96,prod2_stage20_n_97,prod2_stage20_n_98,prod2_stage20_n_99,prod2_stage20_n_100,prod2_stage20_n_101,prod2_stage20_n_102,prod2_stage20_n_103,prod2_stage20_n_104,prod2_stage20_n_105}),
-        .PATTERNBDETECT(NLW_prod2_stage20_PATTERNBDETECT_UNCONNECTED),
-        .PATTERNDETECT(NLW_prod2_stage20_PATTERNDETECT_UNCONNECTED),
+        .OVERFLOW(NLW_prod2_stage2_reg_OVERFLOW_UNCONNECTED),
+        .P({NLW_prod2_stage2_reg_P_UNCONNECTED[47:31],A,prod2_stage2_reg_n_91,prod2_stage2_reg_n_92,prod2_stage2_reg_n_93,prod2_stage2_reg_n_94,prod2_stage2_reg_n_95,prod2_stage2_reg_n_96,prod2_stage2_reg_n_97,prod2_stage2_reg_n_98,prod2_stage2_reg_n_99,prod2_stage2_reg_n_100,prod2_stage2_reg_n_101,prod2_stage2_reg_n_102,prod2_stage2_reg_n_103,prod2_stage2_reg_n_104,prod2_stage2_reg_n_105}),
+        .PATTERNBDETECT(NLW_prod2_stage2_reg_PATTERNBDETECT_UNCONNECTED),
+        .PATTERNDETECT(NLW_prod2_stage2_reg_PATTERNDETECT_UNCONNECTED),
         .PCIN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .PCOUT(NLW_prod2_stage20_PCOUT_UNCONNECTED[47:0]),
+        .PCOUT(NLW_prod2_stage2_reg_PCOUT_UNCONNECTED[47:0]),
         .RSTA(1'b0),
         .RSTALLCARRYIN(1'b0),
         .RSTALUMODE(1'b0),
@@ -259,7 +260,26 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
         .RSTINMODE(1'b0),
         .RSTM(1'b0),
         .RSTP(1'b0),
-        .UNDERFLOW(NLW_prod2_stage20_UNDERFLOW_UNCONNECTED));
+        .UNDERFLOW(NLW_prod2_stage2_reg_UNDERFLOW_UNCONNECTED));
+  FDRE valid_stage1_reg
+       (.C(s00_axi_aclk),
+        .CE(1'b1),
+        .D(valid_stage1_reg_0),
+        .Q(valid_stage1),
+        .R(1'b0));
+  LUT3 #(
+    .INIT(8'hB8)) 
+    valid_stage2_i_1
+       (.I0(valid_stage1),
+        .I1(Q),
+        .I2(valid_stage2),
+        .O(valid_stage2_i_1_n_0));
+  FDRE valid_stage2_reg
+       (.C(s00_axi_aclk),
+        .CE(1'b1),
+        .D(valid_stage2_i_1_n_0),
+        .Q(valid_stage2),
+        .R(1'b0));
   DSP48E1 #(
     .ACASCREG(0),
     .ADREG(1),
@@ -276,7 +296,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
     .DREG(1),
     .INMODEREG(0),
     .MASK(48'h3FFFFFFFFFFF),
-    .MREG(0),
+    .MREG(1),
     .OPMODEREG(0),
     .PATTERN(48'h000000000000),
     .PREG(1),
@@ -286,20 +306,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
     .USE_MULT("MULTIPLY"),
     .USE_PATTERN_DETECT("NO_PATDET"),
     .USE_SIMD("ONE48")) 
-    prod3_stage30
+    y_reg
        (.A({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,A}),
         .ACIN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .ACOUT(NLW_prod3_stage30_ACOUT_UNCONNECTED[29:0]),
+        .ACOUT(NLW_y_reg_ACOUT_UNCONNECTED[29:0]),
         .ALUMODE({1'b0,1'b0,1'b0,1'b0}),
-        .B({1'b0,1'b0,prod3_stage30_0[12],1'b0,prod3_stage30_0[11:10],prod3_stage30_0[11],prod3_stage30_0[9:5],1'b0,prod3_stage30_0[4:0]}),
+        .B({1'b0,1'b0,y_reg_0[12],1'b0,y_reg_0[11:10],y_reg_0[11],y_reg_0[9:5],1'b0,y_reg_0[4:0]}),
         .BCIN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .BCOUT(NLW_prod3_stage30_BCOUT_UNCONNECTED[17:0]),
+        .BCOUT(NLW_y_reg_BCOUT_UNCONNECTED[17:0]),
         .C({1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
         .CARRYCASCIN(1'b0),
-        .CARRYCASCOUT(NLW_prod3_stage30_CARRYCASCOUT_UNCONNECTED),
+        .CARRYCASCOUT(NLW_y_reg_CARRYCASCOUT_UNCONNECTED),
         .CARRYIN(1'b0),
         .CARRYINSEL({1'b0,1'b0,1'b0}),
-        .CARRYOUT(NLW_prod3_stage30_CARRYOUT_UNCONNECTED[3:0]),
+        .CARRYOUT(NLW_y_reg_CARRYOUT_UNCONNECTED[3:0]),
         .CEA1(1'b0),
         .CEA2(1'b0),
         .CEAD(1'b0),
@@ -311,20 +331,20 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
         .CECTRL(1'b0),
         .CED(1'b0),
         .CEINMODE(1'b0),
-        .CEM(1'b0),
+        .CEM(Q),
         .CEP(Q),
         .CLK(s00_axi_aclk),
         .D({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .INMODE({1'b0,1'b0,1'b0,1'b0,1'b0}),
         .MULTSIGNIN(1'b0),
-        .MULTSIGNOUT(NLW_prod3_stage30_MULTSIGNOUT_UNCONNECTED),
+        .MULTSIGNOUT(NLW_y_reg_MULTSIGNOUT_UNCONNECTED),
         .OPMODE({1'b0,1'b0,1'b0,1'b0,1'b1,1'b0,1'b1}),
-        .OVERFLOW(NLW_prod3_stage30_OVERFLOW_UNCONNECTED),
-        .P({NLW_prod3_stage30_P_UNCONNECTED[47:32],prod3_stage3__0}),
-        .PATTERNBDETECT(NLW_prod3_stage30_PATTERNBDETECT_UNCONNECTED),
-        .PATTERNDETECT(NLW_prod3_stage30_PATTERNDETECT_UNCONNECTED),
+        .OVERFLOW(NLW_y_reg_OVERFLOW_UNCONNECTED),
+        .P({NLW_y_reg_P_UNCONNECTED[47:32],P}),
+        .PATTERNBDETECT(NLW_y_reg_PATTERNBDETECT_UNCONNECTED),
+        .PATTERNDETECT(NLW_y_reg_PATTERNDETECT_UNCONNECTED),
         .PCIN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .PCOUT(NLW_prod3_stage30_PCOUT_UNCONNECTED[47:0]),
+        .PCOUT(NLW_y_reg_PCOUT_UNCONNECTED[47:0]),
         .RSTA(1'b0),
         .RSTALLCARRYIN(1'b0),
         .RSTALUMODE(1'b0),
@@ -333,213 +353,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2
         .RSTCTRL(1'b0),
         .RSTD(1'b0),
         .RSTINMODE(1'b0),
-        .RSTM(1'b0),
-        .RSTP(prod3_stage3),
-        .UNDERFLOW(NLW_prod3_stage30_UNDERFLOW_UNCONNECTED));
-  FDRE valid_stage1_reg
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(valid_stage1_reg_0),
-        .Q(valid_stage1),
-        .R(1'b0));
-  FDRE valid_stage2_reg
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(valid_stage1),
-        .Q(valid_stage2),
-        .R(1'b0));
-  FDRE \y_reg[0] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[0]),
-        .Q(\y_reg[31]_0 [0]),
-        .R(1'b0));
-  FDRE \y_reg[10] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[10]),
-        .Q(\y_reg[31]_0 [10]),
-        .R(1'b0));
-  FDRE \y_reg[11] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[11]),
-        .Q(\y_reg[31]_0 [11]),
-        .R(1'b0));
-  FDRE \y_reg[12] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[12]),
-        .Q(\y_reg[31]_0 [12]),
-        .R(1'b0));
-  FDRE \y_reg[13] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[13]),
-        .Q(\y_reg[31]_0 [13]),
-        .R(1'b0));
-  FDRE \y_reg[14] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[14]),
-        .Q(\y_reg[31]_0 [14]),
-        .R(1'b0));
-  FDRE \y_reg[15] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[15]),
-        .Q(\y_reg[31]_0 [15]),
-        .R(1'b0));
-  FDRE \y_reg[16] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[16]),
-        .Q(\y_reg[31]_0 [16]),
-        .R(1'b0));
-  FDRE \y_reg[17] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[17]),
-        .Q(\y_reg[31]_0 [17]),
-        .R(1'b0));
-  FDRE \y_reg[18] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[18]),
-        .Q(\y_reg[31]_0 [18]),
-        .R(1'b0));
-  FDRE \y_reg[19] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[19]),
-        .Q(\y_reg[31]_0 [19]),
-        .R(1'b0));
-  FDRE \y_reg[1] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[1]),
-        .Q(\y_reg[31]_0 [1]),
-        .R(1'b0));
-  FDRE \y_reg[20] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[20]),
-        .Q(\y_reg[31]_0 [20]),
-        .R(1'b0));
-  FDRE \y_reg[21] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[21]),
-        .Q(\y_reg[31]_0 [21]),
-        .R(1'b0));
-  FDRE \y_reg[22] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[22]),
-        .Q(\y_reg[31]_0 [22]),
-        .R(1'b0));
-  FDRE \y_reg[23] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[23]),
-        .Q(\y_reg[31]_0 [23]),
-        .R(1'b0));
-  FDRE \y_reg[24] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[24]),
-        .Q(\y_reg[31]_0 [24]),
-        .R(1'b0));
-  FDRE \y_reg[25] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[25]),
-        .Q(\y_reg[31]_0 [25]),
-        .R(1'b0));
-  FDRE \y_reg[26] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[26]),
-        .Q(\y_reg[31]_0 [26]),
-        .R(1'b0));
-  FDRE \y_reg[27] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[27]),
-        .Q(\y_reg[31]_0 [27]),
-        .R(1'b0));
-  FDRE \y_reg[28] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[28]),
-        .Q(\y_reg[31]_0 [28]),
-        .R(1'b0));
-  FDRE \y_reg[29] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[29]),
-        .Q(\y_reg[31]_0 [29]),
-        .R(1'b0));
-  FDRE \y_reg[2] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[2]),
-        .Q(\y_reg[31]_0 [2]),
-        .R(1'b0));
-  FDRE \y_reg[30] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[30]),
-        .Q(\y_reg[31]_0 [30]),
-        .R(1'b0));
-  FDRE \y_reg[31] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[31]),
-        .Q(\y_reg[31]_0 [31]),
-        .R(1'b0));
-  FDRE \y_reg[3] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[3]),
-        .Q(\y_reg[31]_0 [3]),
-        .R(1'b0));
-  FDRE \y_reg[4] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[4]),
-        .Q(\y_reg[31]_0 [4]),
-        .R(1'b0));
-  FDRE \y_reg[5] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[5]),
-        .Q(\y_reg[31]_0 [5]),
-        .R(1'b0));
-  FDRE \y_reg[6] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[6]),
-        .Q(\y_reg[31]_0 [6]),
-        .R(1'b0));
-  FDRE \y_reg[7] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[7]),
-        .Q(\y_reg[31]_0 [7]),
-        .R(1'b0));
-  FDRE \y_reg[8] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[8]),
-        .Q(\y_reg[31]_0 [8]),
-        .R(1'b0));
-  FDRE \y_reg[9] 
-       (.C(s00_axi_aclk),
-        .CE(Q),
-        .D(prod3_stage3__0[9]),
-        .Q(\y_reg[31]_0 [9]),
-        .R(1'b0));
+        .RSTM(prod3_stage3),
+        .RSTP(1'b0),
+        .UNDERFLOW(NLW_y_reg_UNDERFLOW_UNCONNECTED));
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0
@@ -581,9 +397,41 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0
   wire [15:1]B;
   wire [15:0]lut_frac;
   wire [15:0]lut_integer;
+  wire main_n_0;
+  wire main_n_1;
+  wire main_n_10;
+  wire main_n_11;
+  wire main_n_12;
+  wire main_n_13;
+  wire main_n_14;
+  wire main_n_15;
+  wire main_n_16;
+  wire main_n_17;
+  wire main_n_18;
+  wire main_n_19;
+  wire main_n_2;
+  wire main_n_20;
+  wire main_n_21;
+  wire main_n_22;
+  wire main_n_23;
+  wire main_n_24;
+  wire main_n_25;
+  wire main_n_26;
+  wire main_n_27;
+  wire main_n_28;
+  wire main_n_29;
+  wire main_n_3;
+  wire main_n_30;
+  wire main_n_31;
+  wire main_n_4;
+  wire main_n_5;
+  wire main_n_6;
+  wire main_n_7;
+  wire main_n_8;
+  wire main_n_9;
   wire o_valid;
-  wire overall_axi_v1_0_S00_AXI_inst_n_15;
-  wire overall_axi_v1_0_S00_AXI_inst_n_49;
+  wire overall_axi_v1_0_S00_AXI_inst_n_16;
+  wire overall_axi_v1_0_S00_AXI_inst_n_5;
   wire prod3_stage3;
   wire s00_axi_aclk;
   wire [2:0]s00_axi_araddr;
@@ -603,24 +451,25 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0
   wire [3:0]s00_axi_wstrb;
   wire s00_axi_wvalid;
   wire slv_reg1_from_ps;
+  wire valid_stage1;
   wire valid_stage2;
-  wire [31:0]y;
 
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_main_veri main
-       (.B({B[15:14],B[7:1],overall_axi_v1_0_S00_AXI_inst_n_15}),
+       (.B({B[15:14],B[7:1],overall_axi_v1_0_S00_AXI_inst_n_16}),
+        .P({main_n_0,main_n_1,main_n_2,main_n_3,main_n_4,main_n_5,main_n_6,main_n_7,main_n_8,main_n_9,main_n_10,main_n_11,main_n_12,main_n_13,main_n_14,main_n_15,main_n_16,main_n_17,main_n_18,main_n_19,main_n_20,main_n_21,main_n_22,main_n_23,main_n_24,main_n_25,main_n_26,main_n_27,main_n_28,main_n_29,main_n_30,main_n_31}),
         .Q(slv_reg1_from_ps),
         .o_valid(o_valid),
-        .prod2_stage20(lut_frac),
+        .prod2_stage2_reg(lut_frac),
         .prod3_stage3(prod3_stage3),
-        .prod3_stage30({lut_integer[15],lut_integer[13:12],lut_integer[10:6],lut_integer[4:0]}),
         .s00_axi_aclk(s00_axi_aclk),
-        .valid_stage1_reg(overall_axi_v1_0_S00_AXI_inst_n_49),
+        .valid_stage1(valid_stage1),
+        .valid_stage1_reg(overall_axi_v1_0_S00_AXI_inst_n_5),
         .valid_stage2(valid_stage2),
-        .\y_reg[31] (y));
+        .y_reg({lut_integer[15],lut_integer[13:12],lut_integer[10:6],lut_integer[4:0]}));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI overall_axi_v1_0_S00_AXI_inst
-       (.B({B[15:14],B[7:1],overall_axi_v1_0_S00_AXI_inst_n_15}),
+       (.B({B[15:14],B[7:1],overall_axi_v1_0_S00_AXI_inst_n_16}),
+        .P({main_n_0,main_n_1,main_n_2,main_n_3,main_n_4,main_n_5,main_n_6,main_n_7,main_n_8,main_n_9,main_n_10,main_n_11,main_n_12,main_n_13,main_n_14,main_n_15,main_n_16,main_n_17,main_n_18,main_n_19,main_n_20,main_n_21,main_n_22,main_n_23,main_n_24,main_n_25,main_n_26,main_n_27,main_n_28,main_n_29,main_n_30,main_n_31}),
         .Q(slv_reg1_from_ps),
-        .\axi_rdata_reg[31]_0 (y),
         .o_valid(o_valid),
         .prod3_stage3(prod3_stage3),
         .s00_axi_aclk(s00_axi_aclk),
@@ -642,7 +491,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0
         .s00_axi_wvalid(s00_axi_wvalid),
         .\slv_reg0_reg[11]_0 (lut_frac),
         .\slv_reg0_reg[13]_0 ({lut_integer[15],lut_integer[13:12],lut_integer[10:6],lut_integer[4:0]}),
-        .\slv_reg0_reg[14]_0 (overall_axi_v1_0_S00_AXI_inst_n_49),
+        .\slv_reg0_reg[15]_0 (overall_axi_v1_0_S00_AXI_inst_n_5),
+        .valid_stage1(valid_stage1),
         .valid_stage2(valid_stage2));
 endmodule
 
@@ -652,11 +502,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
     s00_axi_arready,
     s00_axi_bvalid,
     s00_axi_rvalid,
+    \slv_reg0_reg[15]_0 ,
     Q,
     B,
     s00_axi_rdata,
     prod3_stage3,
-    \slv_reg0_reg[14]_0 ,
     \slv_reg0_reg[11]_0 ,
     \slv_reg0_reg[13]_0 ,
     s00_axi_aclk,
@@ -666,23 +516,24 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
     s00_axi_bready,
     s00_axi_arvalid,
     s00_axi_rready,
+    valid_stage1,
     s00_axi_awaddr,
     s00_axi_wdata,
     s00_axi_araddr,
     s00_axi_wstrb,
     valid_stage2,
-    \axi_rdata_reg[31]_0 ,
+    P,
     o_valid);
   output s00_axi_wready;
   output s00_axi_awready;
   output s00_axi_arready;
   output s00_axi_bvalid;
   output s00_axi_rvalid;
+  output \slv_reg0_reg[15]_0 ;
   output [0:0]Q;
   output [9:0]B;
   output [31:0]s00_axi_rdata;
   output prod3_stage3;
-  output \slv_reg0_reg[14]_0 ;
   output [15:0]\slv_reg0_reg[11]_0 ;
   output [12:0]\slv_reg0_reg[13]_0 ;
   input s00_axi_aclk;
@@ -692,15 +543,17 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
   input s00_axi_bready;
   input s00_axi_arvalid;
   input s00_axi_rready;
+  input valid_stage1;
   input [2:0]s00_axi_awaddr;
   input [31:0]s00_axi_wdata;
   input [2:0]s00_axi_araddr;
   input [3:0]s00_axi_wstrb;
   input valid_stage2;
-  input [31:0]\axi_rdata_reg[31]_0 ;
+  input [31:0]P;
   input o_valid;
 
   wire [9:0]B;
+  wire [31:0]P;
   wire [0:0]Q;
   wire aw_en_i_1_n_0;
   wire aw_en_reg_n_0;
@@ -746,13 +599,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
   wire \axi_rdata[7]_i_2_n_0 ;
   wire \axi_rdata[8]_i_2_n_0 ;
   wire \axi_rdata[9]_i_2_n_0 ;
-  wire [31:0]\axi_rdata_reg[31]_0 ;
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
   wire o_valid;
   wire [2:0]p_0_in;
   wire [31:7]p_1_in;
-  wire prod2_stage20_i_26_n_0;
+  wire prod2_stage2_reg_i_26_n_0;
   wire prod3_stage3;
   wire [31:0]reg_data_out;
   wire s00_axi_aclk;
@@ -775,7 +627,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
   wire [2:0]sel0;
   wire [15:0]\slv_reg0_reg[11]_0 ;
   wire [12:0]\slv_reg0_reg[13]_0 ;
-  wire \slv_reg0_reg[14]_0 ;
+  wire \slv_reg0_reg[15]_0 ;
   wire \slv_reg0_reg_n_0_[10] ;
   wire \slv_reg0_reg_n_0_[11] ;
   wire \slv_reg0_reg_n_0_[12] ;
@@ -849,8 +701,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
   wire \slv_reg4[7]_i_1_n_0 ;
   wire slv_reg_rden__0;
   wire slv_reg_wren__0;
+  wire valid_stage1;
   wire valid_stage1_i_2_n_0;
   wire valid_stage1_i_3_n_0;
+  wire valid_stage1_i_4_n_0;
+  wire valid_stage1_i_5_n_0;
   wire valid_stage2;
 
   LUT6 #(
@@ -1015,7 +870,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I2(sel0[2]),
         .I3(sel0[0]),
         .I4(B[0]),
-        .I5(\axi_rdata_reg[31]_0 [0]),
+        .I5(P[0]),
         .O(reg_data_out[0]));
   LUT6 #(
     .INIT(64'h000000AACCF00000)) 
@@ -1034,7 +889,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[10] ),
-        .I4(\axi_rdata_reg[31]_0 [10]),
+        .I4(P[10]),
         .I5(\axi_rdata[10]_i_2_n_0 ),
         .O(reg_data_out[10]));
   LUT5 #(
@@ -1053,7 +908,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[11] ),
-        .I4(\axi_rdata_reg[31]_0 [11]),
+        .I4(P[11]),
         .I5(\axi_rdata[11]_i_2_n_0 ),
         .O(reg_data_out[11]));
   LUT5 #(
@@ -1072,7 +927,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[12] ),
-        .I4(\axi_rdata_reg[31]_0 [12]),
+        .I4(P[12]),
         .I5(\axi_rdata[12]_i_2_n_0 ),
         .O(reg_data_out[12]));
   LUT5 #(
@@ -1091,7 +946,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[13] ),
-        .I4(\axi_rdata_reg[31]_0 [13]),
+        .I4(P[13]),
         .I5(\axi_rdata[13]_i_2_n_0 ),
         .O(reg_data_out[13]));
   LUT5 #(
@@ -1110,7 +965,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[14] ),
-        .I4(\axi_rdata_reg[31]_0 [14]),
+        .I4(P[14]),
         .I5(\axi_rdata[14]_i_2_n_0 ),
         .O(reg_data_out[14]));
   LUT5 #(
@@ -1129,7 +984,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[15] ),
-        .I4(\axi_rdata_reg[31]_0 [15]),
+        .I4(P[15]),
         .I5(\axi_rdata[15]_i_2_n_0 ),
         .O(reg_data_out[15]));
   LUT5 #(
@@ -1148,7 +1003,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[16] ),
-        .I4(\axi_rdata_reg[31]_0 [16]),
+        .I4(P[16]),
         .I5(\axi_rdata[16]_i_2_n_0 ),
         .O(reg_data_out[16]));
   LUT5 #(
@@ -1167,7 +1022,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[17] ),
-        .I4(\axi_rdata_reg[31]_0 [17]),
+        .I4(P[17]),
         .I5(\axi_rdata[17]_i_2_n_0 ),
         .O(reg_data_out[17]));
   LUT5 #(
@@ -1186,7 +1041,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[18] ),
-        .I4(\axi_rdata_reg[31]_0 [18]),
+        .I4(P[18]),
         .I5(\axi_rdata[18]_i_2_n_0 ),
         .O(reg_data_out[18]));
   LUT5 #(
@@ -1205,7 +1060,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[19] ),
-        .I4(\axi_rdata_reg[31]_0 [19]),
+        .I4(P[19]),
         .I5(\axi_rdata[19]_i_2_n_0 ),
         .O(reg_data_out[19]));
   LUT5 #(
@@ -1224,7 +1079,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[1] ),
-        .I4(\axi_rdata_reg[31]_0 [1]),
+        .I4(P[1]),
         .I5(\axi_rdata[1]_i_2_n_0 ),
         .O(reg_data_out[1]));
   LUT5 #(
@@ -1243,7 +1098,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[20] ),
-        .I4(\axi_rdata_reg[31]_0 [20]),
+        .I4(P[20]),
         .I5(\axi_rdata[20]_i_2_n_0 ),
         .O(reg_data_out[20]));
   LUT5 #(
@@ -1262,7 +1117,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[21] ),
-        .I4(\axi_rdata_reg[31]_0 [21]),
+        .I4(P[21]),
         .I5(\axi_rdata[21]_i_2_n_0 ),
         .O(reg_data_out[21]));
   LUT5 #(
@@ -1281,7 +1136,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[22] ),
-        .I4(\axi_rdata_reg[31]_0 [22]),
+        .I4(P[22]),
         .I5(\axi_rdata[22]_i_2_n_0 ),
         .O(reg_data_out[22]));
   LUT5 #(
@@ -1300,7 +1155,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[23] ),
-        .I4(\axi_rdata_reg[31]_0 [23]),
+        .I4(P[23]),
         .I5(\axi_rdata[23]_i_2_n_0 ),
         .O(reg_data_out[23]));
   LUT5 #(
@@ -1319,7 +1174,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[24] ),
-        .I4(\axi_rdata_reg[31]_0 [24]),
+        .I4(P[24]),
         .I5(\axi_rdata[24]_i_2_n_0 ),
         .O(reg_data_out[24]));
   LUT5 #(
@@ -1338,7 +1193,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[25] ),
-        .I4(\axi_rdata_reg[31]_0 [25]),
+        .I4(P[25]),
         .I5(\axi_rdata[25]_i_2_n_0 ),
         .O(reg_data_out[25]));
   LUT5 #(
@@ -1357,7 +1212,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[26] ),
-        .I4(\axi_rdata_reg[31]_0 [26]),
+        .I4(P[26]),
         .I5(\axi_rdata[26]_i_2_n_0 ),
         .O(reg_data_out[26]));
   LUT5 #(
@@ -1376,7 +1231,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[27] ),
-        .I4(\axi_rdata_reg[31]_0 [27]),
+        .I4(P[27]),
         .I5(\axi_rdata[27]_i_2_n_0 ),
         .O(reg_data_out[27]));
   LUT5 #(
@@ -1395,7 +1250,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[28] ),
-        .I4(\axi_rdata_reg[31]_0 [28]),
+        .I4(P[28]),
         .I5(\axi_rdata[28]_i_2_n_0 ),
         .O(reg_data_out[28]));
   LUT5 #(
@@ -1414,7 +1269,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[29] ),
-        .I4(\axi_rdata_reg[31]_0 [29]),
+        .I4(P[29]),
         .I5(\axi_rdata[29]_i_2_n_0 ),
         .O(reg_data_out[29]));
   LUT5 #(
@@ -1433,7 +1288,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[2] ),
-        .I4(\axi_rdata_reg[31]_0 [2]),
+        .I4(P[2]),
         .I5(\axi_rdata[2]_i_2_n_0 ),
         .O(reg_data_out[2]));
   LUT5 #(
@@ -1452,7 +1307,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[30] ),
-        .I4(\axi_rdata_reg[31]_0 [30]),
+        .I4(P[30]),
         .I5(\axi_rdata[30]_i_2_n_0 ),
         .O(reg_data_out[30]));
   LUT5 #(
@@ -1471,7 +1326,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[31] ),
-        .I4(\axi_rdata_reg[31]_0 [31]),
+        .I4(P[31]),
         .I5(\axi_rdata[31]_i_2_n_0 ),
         .O(reg_data_out[31]));
   LUT5 #(
@@ -1490,7 +1345,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[3] ),
-        .I4(\axi_rdata_reg[31]_0 [3]),
+        .I4(P[3]),
         .I5(\axi_rdata[3]_i_2_n_0 ),
         .O(reg_data_out[3]));
   LUT5 #(
@@ -1509,7 +1364,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[4] ),
-        .I4(\axi_rdata_reg[31]_0 [4]),
+        .I4(P[4]),
         .I5(\axi_rdata[4]_i_2_n_0 ),
         .O(reg_data_out[4]));
   LUT5 #(
@@ -1528,7 +1383,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[5] ),
-        .I4(\axi_rdata_reg[31]_0 [5]),
+        .I4(P[5]),
         .I5(\axi_rdata[5]_i_2_n_0 ),
         .O(reg_data_out[5]));
   LUT5 #(
@@ -1547,7 +1402,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[6] ),
-        .I4(\axi_rdata_reg[31]_0 [6]),
+        .I4(P[6]),
         .I5(\axi_rdata[6]_i_2_n_0 ),
         .O(reg_data_out[6]));
   LUT5 #(
@@ -1566,7 +1421,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[7] ),
-        .I4(\axi_rdata_reg[31]_0 [7]),
+        .I4(P[7]),
         .I5(\axi_rdata[7]_i_2_n_0 ),
         .O(reg_data_out[7]));
   LUT5 #(
@@ -1585,7 +1440,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[8] ),
-        .I4(\axi_rdata_reg[31]_0 [8]),
+        .I4(P[8]),
         .I5(\axi_rdata[8]_i_2_n_0 ),
         .O(reg_data_out[8]));
   LUT5 #(
@@ -1604,7 +1459,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I1(sel0[2]),
         .I2(sel0[0]),
         .I3(\slv_reg0_reg_n_0_[9] ),
-        .I4(\axi_rdata_reg[31]_0 [9]),
+        .I4(P[9]),
         .I5(\axi_rdata[9]_i_2_n_0 ),
         .O(reg_data_out[9]));
   LUT5 #(
@@ -1840,16 +1695,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .R(axi_awready_i_1_n_0));
   LUT5 #(
     .INIT(32'h00000001)) 
-    prod2_stage20_i_1
+    prod2_stage2_reg_i_1
        (.I0(\slv_reg0_reg_n_0_[6] ),
         .I1(\slv_reg0_reg_n_0_[5] ),
         .I2(\slv_reg0_reg_n_0_[4] ),
-        .I3(prod2_stage20_i_26_n_0),
+        .I3(prod2_stage2_reg_i_26_n_0),
         .I4(\slv_reg0_reg_n_0_[7] ),
         .O(B[9]));
   LUT4 #(
     .INIT(16'h0001)) 
-    prod2_stage20_i_10
+    prod2_stage2_reg_i_10
        (.I0(\slv_reg0_reg_n_0_[11] ),
         .I1(\slv_reg0_reg_n_0_[10] ),
         .I2(\slv_reg0_reg_n_0_[9] ),
@@ -1857,7 +1712,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [15]));
   LUT4 #(
     .INIT(16'h7776)) 
-    prod2_stage20_i_11
+    prod2_stage2_reg_i_11
        (.I0(\slv_reg0_reg_n_0_[10] ),
         .I1(\slv_reg0_reg_n_0_[11] ),
         .I2(\slv_reg0_reg_n_0_[8] ),
@@ -1865,7 +1720,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [14]));
   LUT4 #(
     .INIT(16'hAB54)) 
-    prod2_stage20_i_12
+    prod2_stage2_reg_i_12
        (.I0(\slv_reg0_reg_n_0_[11] ),
         .I1(\slv_reg0_reg_n_0_[8] ),
         .I2(\slv_reg0_reg_n_0_[9] ),
@@ -1873,7 +1728,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [13]));
   LUT4 #(
     .INIT(16'hF0E6)) 
-    prod2_stage20_i_13
+    prod2_stage2_reg_i_13
        (.I0(\slv_reg0_reg_n_0_[8] ),
         .I1(\slv_reg0_reg_n_0_[9] ),
         .I2(\slv_reg0_reg_n_0_[10] ),
@@ -1881,7 +1736,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [12]));
   LUT4 #(
     .INIT(16'h554C)) 
-    prod2_stage20_i_14
+    prod2_stage2_reg_i_14
        (.I0(\slv_reg0_reg_n_0_[9] ),
         .I1(\slv_reg0_reg_n_0_[8] ),
         .I2(\slv_reg0_reg_n_0_[10] ),
@@ -1889,7 +1744,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [11]));
   LUT4 #(
     .INIT(16'h5160)) 
-    prod2_stage20_i_15
+    prod2_stage2_reg_i_15
        (.I0(\slv_reg0_reg_n_0_[8] ),
         .I1(\slv_reg0_reg_n_0_[9] ),
         .I2(\slv_reg0_reg_n_0_[10] ),
@@ -1897,7 +1752,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [10]));
   LUT4 #(
     .INIT(16'hF120)) 
-    prod2_stage20_i_16
+    prod2_stage2_reg_i_16
        (.I0(\slv_reg0_reg_n_0_[8] ),
         .I1(\slv_reg0_reg_n_0_[11] ),
         .I2(\slv_reg0_reg_n_0_[9] ),
@@ -1905,7 +1760,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [9]));
   LUT4 #(
     .INIT(16'h5B70)) 
-    prod2_stage20_i_17
+    prod2_stage2_reg_i_17
        (.I0(\slv_reg0_reg_n_0_[9] ),
         .I1(\slv_reg0_reg_n_0_[8] ),
         .I2(\slv_reg0_reg_n_0_[10] ),
@@ -1913,7 +1768,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [8]));
   LUT4 #(
     .INIT(16'hDC3E)) 
-    prod2_stage20_i_18
+    prod2_stage2_reg_i_18
        (.I0(\slv_reg0_reg_n_0_[9] ),
         .I1(\slv_reg0_reg_n_0_[10] ),
         .I2(\slv_reg0_reg_n_0_[11] ),
@@ -1921,7 +1776,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [7]));
   LUT4 #(
     .INIT(16'h8464)) 
-    prod2_stage20_i_19
+    prod2_stage2_reg_i_19
        (.I0(\slv_reg0_reg_n_0_[8] ),
         .I1(\slv_reg0_reg_n_0_[9] ),
         .I2(\slv_reg0_reg_n_0_[11] ),
@@ -1929,16 +1784,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [6]));
   LUT5 #(
     .INIT(32'hFFFFFFFE)) 
-    prod2_stage20_i_2
+    prod2_stage2_reg_i_2
        (.I0(\slv_reg0_reg_n_0_[7] ),
-        .I1(prod2_stage20_i_26_n_0),
+        .I1(prod2_stage2_reg_i_26_n_0),
         .I2(\slv_reg0_reg_n_0_[4] ),
         .I3(\slv_reg0_reg_n_0_[5] ),
         .I4(\slv_reg0_reg_n_0_[6] ),
         .O(B[8]));
   LUT4 #(
     .INIT(16'h1FF6)) 
-    prod2_stage20_i_20
+    prod2_stage2_reg_i_20
        (.I0(\slv_reg0_reg_n_0_[9] ),
         .I1(\slv_reg0_reg_n_0_[8] ),
         .I2(\slv_reg0_reg_n_0_[10] ),
@@ -1946,7 +1801,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [5]));
   LUT4 #(
     .INIT(16'h1138)) 
-    prod2_stage20_i_21
+    prod2_stage2_reg_i_21
        (.I0(\slv_reg0_reg_n_0_[10] ),
         .I1(\slv_reg0_reg_n_0_[11] ),
         .I2(\slv_reg0_reg_n_0_[9] ),
@@ -1954,7 +1809,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [4]));
   LUT4 #(
     .INIT(16'h3666)) 
-    prod2_stage20_i_22
+    prod2_stage2_reg_i_22
        (.I0(\slv_reg0_reg_n_0_[8] ),
         .I1(\slv_reg0_reg_n_0_[10] ),
         .I2(\slv_reg0_reg_n_0_[11] ),
@@ -1962,7 +1817,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [3]));
   LUT4 #(
     .INIT(16'h7974)) 
-    prod2_stage20_i_23
+    prod2_stage2_reg_i_23
        (.I0(\slv_reg0_reg_n_0_[11] ),
         .I1(\slv_reg0_reg_n_0_[10] ),
         .I2(\slv_reg0_reg_n_0_[8] ),
@@ -1970,7 +1825,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [2]));
   LUT4 #(
     .INIT(16'h6712)) 
-    prod2_stage20_i_24
+    prod2_stage2_reg_i_24
        (.I0(\slv_reg0_reg_n_0_[8] ),
         .I1(\slv_reg0_reg_n_0_[9] ),
         .I2(\slv_reg0_reg_n_0_[10] ),
@@ -1978,7 +1833,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [1]));
   LUT4 #(
     .INIT(16'h9AFA)) 
-    prod2_stage20_i_25
+    prod2_stage2_reg_i_25
        (.I0(\slv_reg0_reg_n_0_[10] ),
         .I1(\slv_reg0_reg_n_0_[11] ),
         .I2(\slv_reg0_reg_n_0_[9] ),
@@ -1986,32 +1841,32 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(\slv_reg0_reg[11]_0 [0]));
   LUT4 #(
     .INIT(16'hFFFE)) 
-    prod2_stage20_i_26
+    prod2_stage2_reg_i_26
        (.I0(\slv_reg0_reg_n_0_[2] ),
         .I1(B[0]),
         .I2(\slv_reg0_reg_n_0_[1] ),
         .I3(\slv_reg0_reg_n_0_[3] ),
-        .O(prod2_stage20_i_26_n_0));
+        .O(prod2_stage2_reg_i_26_n_0));
   LUT5 #(
     .INIT(32'h0001FFFE)) 
-    prod2_stage20_i_3
+    prod2_stage2_reg_i_3
        (.I0(\slv_reg0_reg_n_0_[6] ),
         .I1(\slv_reg0_reg_n_0_[5] ),
         .I2(\slv_reg0_reg_n_0_[4] ),
-        .I3(prod2_stage20_i_26_n_0),
+        .I3(prod2_stage2_reg_i_26_n_0),
         .I4(\slv_reg0_reg_n_0_[7] ),
         .O(B[7]));
   LUT4 #(
     .INIT(16'h01FE)) 
-    prod2_stage20_i_4
-       (.I0(prod2_stage20_i_26_n_0),
+    prod2_stage2_reg_i_4
+       (.I0(prod2_stage2_reg_i_26_n_0),
         .I1(\slv_reg0_reg_n_0_[4] ),
         .I2(\slv_reg0_reg_n_0_[5] ),
         .I3(\slv_reg0_reg_n_0_[6] ),
         .O(B[6]));
   LUT6 #(
     .INIT(64'h00000001FFFFFFFE)) 
-    prod2_stage20_i_5
+    prod2_stage2_reg_i_5
        (.I0(\slv_reg0_reg_n_0_[4] ),
         .I1(\slv_reg0_reg_n_0_[2] ),
         .I2(B[0]),
@@ -2021,7 +1876,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(B[5]));
   LUT5 #(
     .INIT(32'h0001FFFE)) 
-    prod2_stage20_i_6
+    prod2_stage2_reg_i_6
        (.I0(\slv_reg0_reg_n_0_[3] ),
         .I1(\slv_reg0_reg_n_0_[1] ),
         .I2(B[0]),
@@ -2030,7 +1885,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(B[4]));
   LUT4 #(
     .INIT(16'h01FE)) 
-    prod2_stage20_i_7
+    prod2_stage2_reg_i_7
        (.I0(\slv_reg0_reg_n_0_[2] ),
         .I1(B[0]),
         .I2(\slv_reg0_reg_n_0_[1] ),
@@ -2038,126 +1893,17 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .O(B[3]));
   LUT3 #(
     .INIT(8'h1E)) 
-    prod2_stage20_i_8
+    prod2_stage2_reg_i_8
        (.I0(\slv_reg0_reg_n_0_[1] ),
         .I1(B[0]),
         .I2(\slv_reg0_reg_n_0_[2] ),
         .O(B[2]));
   LUT2 #(
     .INIT(4'h6)) 
-    prod2_stage20_i_9
+    prod2_stage2_reg_i_9
        (.I0(B[0]),
         .I1(\slv_reg0_reg_n_0_[1] ),
         .O(B[1]));
-  LUT2 #(
-    .INIT(4'h2)) 
-    prod3_stage30_i_1
-       (.I0(Q),
-        .I1(valid_stage2),
-        .O(prod3_stage3));
-  LUT4 #(
-    .INIT(16'h0F0E)) 
-    prod3_stage30_i_10
-       (.I0(\slv_reg0_reg_n_0_[12] ),
-        .I1(\slv_reg0_reg_n_0_[14] ),
-        .I2(\slv_reg0_reg_n_0_[15] ),
-        .I3(\slv_reg0_reg_n_0_[13] ),
-        .O(\slv_reg0_reg[13]_0 [4]));
-  LUT4 #(
-    .INIT(16'h01E2)) 
-    prod3_stage30_i_11
-       (.I0(\slv_reg0_reg_n_0_[14] ),
-        .I1(\slv_reg0_reg_n_0_[13] ),
-        .I2(\slv_reg0_reg_n_0_[12] ),
-        .I3(\slv_reg0_reg_n_0_[15] ),
-        .O(\slv_reg0_reg[13]_0 [3]));
-  LUT4 #(
-    .INIT(16'h1F00)) 
-    prod3_stage30_i_12
-       (.I0(\slv_reg0_reg_n_0_[13] ),
-        .I1(\slv_reg0_reg_n_0_[14] ),
-        .I2(\slv_reg0_reg_n_0_[15] ),
-        .I3(\slv_reg0_reg_n_0_[12] ),
-        .O(\slv_reg0_reg[13]_0 [2]));
-  LUT4 #(
-    .INIT(16'h0312)) 
-    prod3_stage30_i_13
-       (.I0(\slv_reg0_reg_n_0_[12] ),
-        .I1(\slv_reg0_reg_n_0_[14] ),
-        .I2(\slv_reg0_reg_n_0_[15] ),
-        .I3(\slv_reg0_reg_n_0_[13] ),
-        .O(\slv_reg0_reg[13]_0 [1]));
-  LUT4 #(
-    .INIT(16'h03A8)) 
-    prod3_stage30_i_14
-       (.I0(\slv_reg0_reg_n_0_[13] ),
-        .I1(\slv_reg0_reg_n_0_[12] ),
-        .I2(\slv_reg0_reg_n_0_[14] ),
-        .I3(\slv_reg0_reg_n_0_[15] ),
-        .O(\slv_reg0_reg[13]_0 [0]));
-  LUT4 #(
-    .INIT(16'h0001)) 
-    prod3_stage30_i_2
-       (.I0(\slv_reg0_reg_n_0_[13] ),
-        .I1(\slv_reg0_reg_n_0_[15] ),
-        .I2(\slv_reg0_reg_n_0_[14] ),
-        .I3(\slv_reg0_reg_n_0_[12] ),
-        .O(\slv_reg0_reg[13]_0 [12]));
-  LUT4 #(
-    .INIT(16'h0004)) 
-    prod3_stage30_i_3
-       (.I0(\slv_reg0_reg_n_0_[14] ),
-        .I1(\slv_reg0_reg_n_0_[12] ),
-        .I2(\slv_reg0_reg_n_0_[15] ),
-        .I3(\slv_reg0_reg_n_0_[13] ),
-        .O(\slv_reg0_reg[13]_0 [11]));
-  LUT4 #(
-    .INIT(16'h0004)) 
-    prod3_stage30_i_4
-       (.I0(\slv_reg0_reg_n_0_[15] ),
-        .I1(\slv_reg0_reg_n_0_[13] ),
-        .I2(\slv_reg0_reg_n_0_[14] ),
-        .I3(\slv_reg0_reg_n_0_[12] ),
-        .O(\slv_reg0_reg[13]_0 [10]));
-  LUT3 #(
-    .INIT(8'h04)) 
-    prod3_stage30_i_5
-       (.I0(\slv_reg0_reg_n_0_[15] ),
-        .I1(\slv_reg0_reg_n_0_[12] ),
-        .I2(\slv_reg0_reg_n_0_[14] ),
-        .O(\slv_reg0_reg[13]_0 [9]));
-  LUT4 #(
-    .INIT(16'h0034)) 
-    prod3_stage30_i_6
-       (.I0(\slv_reg0_reg_n_0_[13] ),
-        .I1(\slv_reg0_reg_n_0_[14] ),
-        .I2(\slv_reg0_reg_n_0_[12] ),
-        .I3(\slv_reg0_reg_n_0_[15] ),
-        .O(\slv_reg0_reg[13]_0 [8]));
-  LUT4 #(
-    .INIT(16'h0012)) 
-    prod3_stage30_i_7
-       (.I0(\slv_reg0_reg_n_0_[12] ),
-        .I1(\slv_reg0_reg_n_0_[14] ),
-        .I2(\slv_reg0_reg_n_0_[13] ),
-        .I3(\slv_reg0_reg_n_0_[15] ),
-        .O(\slv_reg0_reg[13]_0 [7]));
-  LUT4 #(
-    .INIT(16'h0400)) 
-    prod3_stage30_i_8
-       (.I0(\slv_reg0_reg_n_0_[13] ),
-        .I1(\slv_reg0_reg_n_0_[14] ),
-        .I2(\slv_reg0_reg_n_0_[15] ),
-        .I3(\slv_reg0_reg_n_0_[12] ),
-        .O(\slv_reg0_reg[13]_0 [6]));
-  LUT4 #(
-    .INIT(16'h006E)) 
-    prod3_stage30_i_9
-       (.I0(\slv_reg0_reg_n_0_[13] ),
-        .I1(\slv_reg0_reg_n_0_[14] ),
-        .I2(\slv_reg0_reg_n_0_[12] ),
-        .I3(\slv_reg0_reg_n_0_[15] ),
-        .O(\slv_reg0_reg[13]_0 [5]));
   LUT5 #(
     .INIT(32'h00020000)) 
     \slv_reg0[15]_i_1 
@@ -2859,79 +2605,207 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_axi_v1_0_S00_AXI
         .I2(s00_axi_arready),
         .O(slv_reg_rden__0));
   LUT6 #(
-    .INIT(64'hAAAAAAAAAAAAAABA)) 
+    .INIT(64'hFFBFFFFFFFBF0000)) 
     valid_stage1_i_1
        (.I0(valid_stage1_i_2_n_0),
-        .I1(prod2_stage20_i_26_n_0),
-        .I2(valid_stage1_i_3_n_0),
-        .I3(\slv_reg0_reg_n_0_[14] ),
-        .I4(\slv_reg0_reg_n_0_[4] ),
-        .I5(\slv_reg0_reg_n_0_[5] ),
-        .O(\slv_reg0_reg[14]_0 ));
-  LUT4 #(
-    .INIT(16'h575F)) 
+        .I1(valid_stage1_i_3_n_0),
+        .I2(\slv_reg0_reg_n_0_[15] ),
+        .I3(valid_stage1_i_4_n_0),
+        .I4(Q),
+        .I5(valid_stage1),
+        .O(\slv_reg0_reg[15]_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
     valid_stage1_i_2
-       (.I0(\slv_reg0_reg_n_0_[15] ),
-        .I1(\slv_reg0_reg_n_0_[12] ),
-        .I2(\slv_reg0_reg_n_0_[14] ),
-        .I3(\slv_reg0_reg_n_0_[13] ),
+       (.I0(\slv_reg0_reg_n_0_[13] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
         .O(valid_stage1_i_2_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    valid_stage1_i_3
+       (.I0(\slv_reg0_reg_n_0_[12] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
+        .O(valid_stage1_i_3_n_0));
+  LUT5 #(
+    .INIT(32'h00000100)) 
+    valid_stage1_i_4
+       (.I0(\slv_reg0_reg_n_0_[5] ),
+        .I1(\slv_reg0_reg_n_0_[4] ),
+        .I2(\slv_reg0_reg_n_0_[14] ),
+        .I3(valid_stage1_i_5_n_0),
+        .I4(prod2_stage2_reg_i_26_n_0),
+        .O(valid_stage1_i_4_n_0));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
-    valid_stage1_i_3
+    valid_stage1_i_5
        (.I0(\slv_reg0_reg_n_0_[8] ),
         .I1(\slv_reg0_reg_n_0_[9] ),
         .I2(\slv_reg0_reg_n_0_[6] ),
         .I3(\slv_reg0_reg_n_0_[7] ),
         .I4(\slv_reg0_reg_n_0_[11] ),
         .I5(\slv_reg0_reg_n_0_[10] ),
-        .O(valid_stage1_i_3_n_0));
+        .O(valid_stage1_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    y_reg_i_1
+       (.I0(Q),
+        .I1(valid_stage2),
+        .O(prod3_stage3));
+  LUT4 #(
+    .INIT(16'h0F0E)) 
+    y_reg_i_10
+       (.I0(\slv_reg0_reg_n_0_[12] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
+        .I2(\slv_reg0_reg_n_0_[15] ),
+        .I3(\slv_reg0_reg_n_0_[13] ),
+        .O(\slv_reg0_reg[13]_0 [4]));
+  LUT4 #(
+    .INIT(16'h01E2)) 
+    y_reg_i_11
+       (.I0(\slv_reg0_reg_n_0_[14] ),
+        .I1(\slv_reg0_reg_n_0_[13] ),
+        .I2(\slv_reg0_reg_n_0_[12] ),
+        .I3(\slv_reg0_reg_n_0_[15] ),
+        .O(\slv_reg0_reg[13]_0 [3]));
+  LUT4 #(
+    .INIT(16'h1F00)) 
+    y_reg_i_12
+       (.I0(\slv_reg0_reg_n_0_[13] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
+        .I2(\slv_reg0_reg_n_0_[15] ),
+        .I3(\slv_reg0_reg_n_0_[12] ),
+        .O(\slv_reg0_reg[13]_0 [2]));
+  LUT4 #(
+    .INIT(16'h0312)) 
+    y_reg_i_13
+       (.I0(\slv_reg0_reg_n_0_[12] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
+        .I2(\slv_reg0_reg_n_0_[15] ),
+        .I3(\slv_reg0_reg_n_0_[13] ),
+        .O(\slv_reg0_reg[13]_0 [1]));
+  LUT4 #(
+    .INIT(16'h03A8)) 
+    y_reg_i_14
+       (.I0(\slv_reg0_reg_n_0_[13] ),
+        .I1(\slv_reg0_reg_n_0_[12] ),
+        .I2(\slv_reg0_reg_n_0_[14] ),
+        .I3(\slv_reg0_reg_n_0_[15] ),
+        .O(\slv_reg0_reg[13]_0 [0]));
+  LUT4 #(
+    .INIT(16'h0001)) 
+    y_reg_i_2
+       (.I0(\slv_reg0_reg_n_0_[13] ),
+        .I1(\slv_reg0_reg_n_0_[15] ),
+        .I2(\slv_reg0_reg_n_0_[14] ),
+        .I3(\slv_reg0_reg_n_0_[12] ),
+        .O(\slv_reg0_reg[13]_0 [12]));
+  LUT4 #(
+    .INIT(16'h0004)) 
+    y_reg_i_3
+       (.I0(\slv_reg0_reg_n_0_[14] ),
+        .I1(\slv_reg0_reg_n_0_[12] ),
+        .I2(\slv_reg0_reg_n_0_[15] ),
+        .I3(\slv_reg0_reg_n_0_[13] ),
+        .O(\slv_reg0_reg[13]_0 [11]));
+  LUT4 #(
+    .INIT(16'h0004)) 
+    y_reg_i_4
+       (.I0(\slv_reg0_reg_n_0_[15] ),
+        .I1(\slv_reg0_reg_n_0_[13] ),
+        .I2(\slv_reg0_reg_n_0_[14] ),
+        .I3(\slv_reg0_reg_n_0_[12] ),
+        .O(\slv_reg0_reg[13]_0 [10]));
+  LUT3 #(
+    .INIT(8'h04)) 
+    y_reg_i_5
+       (.I0(\slv_reg0_reg_n_0_[15] ),
+        .I1(\slv_reg0_reg_n_0_[12] ),
+        .I2(\slv_reg0_reg_n_0_[14] ),
+        .O(\slv_reg0_reg[13]_0 [9]));
+  LUT4 #(
+    .INIT(16'h0034)) 
+    y_reg_i_6
+       (.I0(\slv_reg0_reg_n_0_[13] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
+        .I2(\slv_reg0_reg_n_0_[12] ),
+        .I3(\slv_reg0_reg_n_0_[15] ),
+        .O(\slv_reg0_reg[13]_0 [8]));
+  LUT4 #(
+    .INIT(16'h0012)) 
+    y_reg_i_7
+       (.I0(\slv_reg0_reg_n_0_[12] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
+        .I2(\slv_reg0_reg_n_0_[13] ),
+        .I3(\slv_reg0_reg_n_0_[15] ),
+        .O(\slv_reg0_reg[13]_0 [7]));
+  LUT4 #(
+    .INIT(16'h0400)) 
+    y_reg_i_8
+       (.I0(\slv_reg0_reg_n_0_[13] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
+        .I2(\slv_reg0_reg_n_0_[15] ),
+        .I3(\slv_reg0_reg_n_0_[12] ),
+        .O(\slv_reg0_reg[13]_0 [6]));
+  LUT4 #(
+    .INIT(16'h006E)) 
+    y_reg_i_9
+       (.I0(\slv_reg0_reg_n_0_[13] ),
+        .I1(\slv_reg0_reg_n_0_[14] ),
+        .I2(\slv_reg0_reg_n_0_[12] ),
+        .I3(\slv_reg0_reg_n_0_[15] ),
+        .O(\slv_reg0_reg[13]_0 [5]));
 endmodule
 
 module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_overall_main_veri
-   (valid_stage2,
+   (P,
     o_valid,
-    \y_reg[31] ,
+    valid_stage1,
+    valid_stage2,
     Q,
     s00_axi_aclk,
     B,
-    prod2_stage20,
+    prod2_stage2_reg,
     prod3_stage3,
-    prod3_stage30,
+    y_reg,
     valid_stage1_reg);
-  output valid_stage2;
+  output [31:0]P;
   output o_valid;
-  output [31:0]\y_reg[31] ;
+  output valid_stage1;
+  output valid_stage2;
   input [0:0]Q;
   input s00_axi_aclk;
   input [9:0]B;
-  input [15:0]prod2_stage20;
+  input [15:0]prod2_stage2_reg;
   input prod3_stage3;
-  input [12:0]prod3_stage30;
+  input [12:0]y_reg;
   input valid_stage1_reg;
 
   wire [9:0]B;
+  wire [31:0]P;
   wire [0:0]Q;
   wire o_valid;
-  wire [15:0]prod2_stage20;
+  wire [15:0]prod2_stage2_reg;
   wire prod3_stage3;
-  wire [12:0]prod3_stage30;
   wire s00_axi_aclk;
+  wire valid_stage1;
   wire valid_stage1_reg;
   wire valid_stage2;
-  wire [31:0]\y_reg[31] ;
+  wire [12:0]y_reg;
 
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_exp_imp_v2 main
        (.B(B),
+        .P(P),
         .Q(Q),
         .o_valid(o_valid),
-        .prod2_stage20_0(prod2_stage20),
+        .prod2_stage2_reg_0(prod2_stage2_reg),
         .prod3_stage3(prod3_stage3),
-        .prod3_stage30_0(prod3_stage30),
         .s00_axi_aclk(s00_axi_aclk),
+        .valid_stage1(valid_stage1),
         .valid_stage1_reg_0(valid_stage1_reg),
         .valid_stage2(valid_stage2),
-        .\y_reg[31]_0 (\y_reg[31] ));
+        .y_reg_0(y_reg));
 endmodule
 `ifndef GLBL
 `define GLBL

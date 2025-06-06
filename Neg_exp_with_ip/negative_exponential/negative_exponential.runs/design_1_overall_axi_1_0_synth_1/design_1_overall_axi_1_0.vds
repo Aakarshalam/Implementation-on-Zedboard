@@ -1,22 +1,33 @@
 #-----------------------------------------------------------
-# Vivado v2023.2 (64-bit)
-# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
-# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
-# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Jun  5 11:01:18 2025
-# Process ID: 16892
-# Current directory: D:/Give_me_Attention/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1
-# Command line: vivado.exe -log design_1_overall_axi_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_overall_axi_1_0.tcl
-# Log file: D:/Give_me_Attention/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/design_1_overall_axi_1_0.vds
-# Journal file: D:/Give_me_Attention/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1\vivado.jou
-# Running On: LAPTOP-BUVLRENO, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 12, Host memory: 16870 MB
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun  5 22:40:24 2025
+# Process ID         : 8540
+# Current directory  : C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1
+# Command line       : vivado.exe -log design_1_overall_axi_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_overall_axi_1_0.tcl
+# Log file           : C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/design_1_overall_axi_1_0.vds
+# Journal file       : C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1\vivado.jou
+# Running On         : DESKTOP-F2ROL01
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 9 5900X 12-Core Processor            
+# CPU Frequency      : 3700 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 34278 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36425 MB
+# Available Virtual  : 24112 MB
 #-----------------------------------------------------------
 source design_1_overall_axi_1_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 485.891 ; gain = 180.156
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Give_me_Attention/ip_repo/overall_axi_1_0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Give_me_Attention/ip_repo/Test_1_0'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/ip_repo/overall_axi_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/ip_repo/Test_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_overall_axi_1_0
 Command: synth_design -top design_1_overall_axi_1_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -25,26 +36,26 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19340
+INFO: [Synth 8-7075] Helper process launched with PID 16016
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1364.062 ; gain = 440.648
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1328.871 ; gain = 467.328
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_overall_axi_1_0' [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/synth/design_1_overall_axi_1_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'overall_axi_v1_0' [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0.v:4]
-INFO: [Synth 8-6157] synthesizing module 'overall_axi_v1_0_S00_AXI' [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'overall_axi_v1_0_S00_AXI' (0#1) [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'overall_main_veri' [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/overall_main_veri.v:3]
-INFO: [Synth 8-6157] synthesizing module 'exp_imp_v2' [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:3]
-INFO: [Synth 8-226] default block is never used [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:47]
-INFO: [Synth 8-6155] done synthesizing module 'exp_imp_v2' (0#1) [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'overall_main_veri' (0#1) [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/overall_main_veri.v:3]
-WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (16) of module 'overall_main_veri' [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0.v:88]
-INFO: [Synth 8-6155] done synthesizing module 'overall_axi_v1_0' (0#1) [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_overall_axi_1_0' (0#1) [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/synth/design_1_overall_axi_1_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0_S00_AXI.v:235]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0_S00_AXI.v:236]
-WARNING: [Synth 8-6014] Unused sequential element x_stage1_reg was removed.  [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:72]
-WARNING: [Synth 8-6014] Unused sequential element x_2_stage1_reg was removed.  [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:73]
+INFO: [Synth 8-6157] synthesizing module 'design_1_overall_axi_1_0' [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/synth/design_1_overall_axi_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'overall_axi_v1_0' [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'overall_axi_v1_0_S00_AXI' [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'overall_axi_v1_0_S00_AXI' (0#1) [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'overall_main_veri' [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/overall_main_veri.v:3]
+INFO: [Synth 8-6157] synthesizing module 'exp_imp_v2' [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:3]
+INFO: [Synth 8-226] default block is never used [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'exp_imp_v2' (0#1) [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'overall_main_veri' (0#1) [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/overall_main_veri.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (16) of module 'overall_main_veri' [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'overall_axi_v1_0' (0#1) [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_overall_axi_1_0' (0#1) [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/synth/design_1_overall_axi_1_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0_S00_AXI.v:235]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/hdl/overall_axi_v1_0_S00_AXI.v:236]
+WARNING: [Synth 8-6014] Unused sequential element x_stage1_reg was removed.  [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:72]
+WARNING: [Synth 8-6014] Unused sequential element x_2_stage1_reg was removed.  [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:73]
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module overall_axi_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module overall_axi_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module overall_axi_v1_0_S00_AXI is either unconnected or has no load
@@ -52,54 +63,54 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module overall_axi_v1_0_S00_AXI 
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module overall_axi_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module overall_axi_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1475.754 ; gain = 552.340
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1440.184 ; gain = 578.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1475.754 ; gain = 552.340
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1440.184 ; gain = 578.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1475.754 ; gain = 552.340
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1440.184 ; gain = 578.641
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1475.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1440.184 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'clk_wiz_0'. The XDC file d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0.xdc will not be read for any cell of this module.
-Parsing XDC File [D:/Give_me_Attention/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/Give_me_Attention/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Give_me_Attention/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_overall_axi_1_0_propImpl.xdc].
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'clk_wiz_0'. The XDC file c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0.xdc will not be read for any cell of this module.
+Parsing XDC File [C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_overall_axi_1_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_overall_axi_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1575.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1535.273 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1575.090 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1535.273 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1535.273 ; gain = 673.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1535.273 ; gain = 673.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:34 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1535.273 ; gain = 673.730
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'prod2_stage2_reg' and it is trimmed from '32' to '31' bits. [d:/Give_me_Attention/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:81]
+WARNING: [Synth 8-3936] Found unconnected internal register 'prod2_stage2_reg' and it is trimmed from '32' to '31' bits. [c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ipshared/03d6/src/exp_imp_v2.v:81]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:35 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1535.273 ; gain = 673.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -133,10 +144,17 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Report: Generating DSP inst/main/main/prod2_stage20, operation Mode is: A*B.
-DSP Report: operator inst/main/main/prod2_stage20 is absorbed into DSP inst/main/main/prod2_stage20.
-DSP Report: Generating DSP inst/main/main/prod3_stage30, operation Mode is: A*B.
-DSP Report: operator inst/main/main/prod3_stage30 is absorbed into DSP inst/main/main/prod3_stage30.
+DSP Report: Generating DSP inst/main/main/prod2_stage2_reg, operation Mode is: (A2*B2)'.
+DSP Report: register inst/main/main/prod2_stage2_reg is absorbed into DSP inst/main/main/prod2_stage2_reg.
+DSP Report: register inst/main/main/op2_stage1_reg is absorbed into DSP inst/main/main/prod2_stage2_reg.
+DSP Report: register inst/main/main/prod2_stage2_reg is absorbed into DSP inst/main/main/prod2_stage2_reg.
+DSP Report: operator inst/main/main/prod2_stage20 is absorbed into DSP inst/main/main/prod2_stage2_reg.
+DSP Report: Generating DSP inst/main/main/y_reg, operation Mode is: (A*B'')'.
+DSP Report: register inst/main/main/op1_stage1_reg is absorbed into DSP inst/main/main/y_reg.
+DSP Report: register inst/main/main/op1_stage2_reg is absorbed into DSP inst/main/main/y_reg.
+DSP Report: register inst/main/main/y_reg is absorbed into DSP inst/main/main/y_reg.
+DSP Report: register inst/main/main/prod3_stage3_reg is absorbed into DSP inst/main/main/y_reg.
+DSP Report: operator inst/main/main/prod3_stage30 is absorbed into DSP inst/main/main/y_reg.
 WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_overall_axi_1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_overall_axi_1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_overall_axi_1_0 is either unconnected or has no load
@@ -144,10 +162,10 @@ WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_overall_axi_1_
 WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_overall_axi_1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_overall_axi_1_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:40 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1535.273 ; gain = 673.730
 ---------------------------------------------------------------------------------
- Sort Area is  inst/main/main/prod2_stage20_0 : 0 0 : 1946 1946 : Used 1 time 0
- Sort Area is  inst/main/main/prod3_stage30_2 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is  inst/main/main/y_reg_2 : 0 0 : 2042 2042 : Used 1 time 0
+ Sort Area is  inst/main/main/prod2_stage2_reg_0 : 0 0 : 2009 2009 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
@@ -156,8 +174,8 @@ DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding R
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|exp_imp_v2  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|exp_imp_v2  | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|exp_imp_v2  | (A2*B2)'    | 16     | 16     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|exp_imp_v2  | (A*B'')'    | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 1    | 1    | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -168,19 +186,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:01:02 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1683.465 ; gain = 821.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:01:02 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1683.613 ; gain = 822.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:01:02 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1702.707 ; gain = 841.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -198,37 +216,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.590 ; gain = 1052.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.590 ; gain = 1052.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.590 ; gain = 1052.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.590 ; gain = 1052.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.590 ; gain = 1052.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.590 ; gain = 1052.047
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -238,8 +256,8 @@ DSP Final Report (the ' indicates corresponding REG is set)
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|exp_imp_v2  | (A'*B')'    | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
-|exp_imp_v2  | (A*B'')'    | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|exp_imp_v2  | (A'*B')'    | 16     | 16     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|exp_imp_v2  | ((A*B'')')' | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 1    | 1    | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
@@ -255,40 +273,40 @@ Report Cell Usage:
 +------+--------+------+
 |1     |DSP48E1 |     2|
 |3     |LUT1    |     1|
-|4     |LUT2    |     3|
-|5     |LUT3    |     3|
-|6     |LUT4    |    39|
-|7     |LUT5    |    47|
+|4     |LUT2    |     5|
+|5     |LUT3    |     4|
+|6     |LUT4    |    38|
+|7     |LUT5    |    48|
 |8     |LUT6    |    41|
-|9     |FDRE    |   174|
+|9     |FDRE    |   142|
 |10    |FDSE    |     1|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:01:13 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.590 ; gain = 1052.047
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:01:10 . Memory (MB): peak = 1575.090 ; gain = 552.340
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:01:14 . Memory (MB): peak = 1575.090 ; gain = 651.676
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1913.590 ; gain = 956.957
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.590 ; gain = 1052.047
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1575.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1913.590 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1575.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1913.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 3bdf587
+Synth Design complete | Checksum: b7c496bc
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 19 Warnings, 1 Critical Warnings and 0 Errors encountered.
+32 Infos, 20 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:01:24 . Memory (MB): peak = 1575.090 ; gain = 1072.750
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1575.090 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/Give_me_Attention/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/design_1_overall_axi_1_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1913.590 ; gain = 1278.031
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1913.590 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/design_1_overall_axi_1_0.dcp' has been generated.
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1575.090 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/Give_me_Attention/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/design_1_overall_axi_1_0.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file design_1_overall_axi_1_0_utilization_synth.rpt -pb design_1_overall_axi_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun  5 11:02:57 2025...
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1913.590 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/design_1_overall_axi_1_0_synth_1/design_1_overall_axi_1_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_overall_axi_1_0_utilization_synth.rpt -pb design_1_overall_axi_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  5 22:41:02 2025...
