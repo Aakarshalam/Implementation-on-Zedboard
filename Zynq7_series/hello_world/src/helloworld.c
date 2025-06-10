@@ -33,7 +33,7 @@ int main()
     // print("Successfully ran Hello World application");
     // cleanup_platform();
     // return 0;
-    u32 x_val = 4901; // e^(-1)
+    u32 x_val = 30894; // e^(-1)
     u32 inp_valid = 1;
     u32 y = 0;
     u32 out_valid = 0;

@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/impl_1'
+HD_PWD='C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
