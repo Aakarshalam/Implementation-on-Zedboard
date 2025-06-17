@@ -2,7 +2,7 @@
 
 This repository contains a complete **end-to-end implementation** of a custom RTL design interfacing the **Processing System (PS)** and **Programmable Logic (PL)** on the **ZedBoard** (Zynq-7000 series).
 
-# 📁 Repository Highlights
+# Repository highlights
 
 - Fully verified on ZedBoard hardware  
 - Written entirely in **Verilog**
