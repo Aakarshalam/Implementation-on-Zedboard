@@ -1,3 +1,11 @@
-## PS-PL RTL block Implementation on Zedboard 
-Files uploaded on this rep have been_ end-to-end_ implemented on Zedboard and verified, each file contains all the required items along with simulation files if needed. The source and simulation files are written in Verilog. 
-Have a good read! :)
+## PS-PL RTL Block Implementation on ZedBoard
+
+This repository contains a complete **end-to-end implementation** of a custom RTL design interfacing the **Processing System (PS)** and **Programmable Logic (PL)** on the **ZedBoard** (Zynq-7000 series).
+
+# 📁 Repository Highlights
+
+- Fully verified on ZedBoard hardware  
+- Written entirely in **Verilog**
+- Includes **simulation testbenches** wherever applicable  
+
+Have a great read and happy hacking! 😄  
