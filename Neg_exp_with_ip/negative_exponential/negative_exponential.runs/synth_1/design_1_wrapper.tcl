@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/synth_1/design_1_wrapper.tcl"
+  variable script "C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -63,30 +63,29 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.cache/wt} [current_project]
-set_property parent.project_path {C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.xpr} [current_project]
+set_property webtalk.parent_dir C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.cache/wt [current_project]
+set_property parent.project_path C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
-  {c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/ip_repo/overall_axi_1_0}
-  {c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/ip_repo/Test_1_0}
+  c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/ip_repo/overall_axi_1_0
+  c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/ip_repo/Test_1_0
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo {c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.cache/ip} [current_project]
+set_property ip_output_repo c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib {{C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v}}
-add_files {{C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.srcs/sources_1/bd/design_1/design_1.bd}}
-set_property used_in_implementation false [get_files -all {{c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_ps7_0_axi_periph_imp_auto_pc_0/design_1_ps7_0_axi_periph_imp_auto_pc_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/design_1_ooc.xdc}}]
+read_verilog -library xil_defaultlib C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_ps7_0_axi_periph_imp_auto_pc_0/design_1_ps7_0_axi_periph_imp_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -97,14 +96,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.srcs/constrs_1/new/exp_constraints.xdc}}
-set_property used_in_implementation false [get_files {{C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.srcs/constrs_1/new/exp_constraints.xdc}}]
+read_xdc C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.srcs/constrs_1/new/exp_constraints.xdc
+set_property used_in_implementation false [get_files C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.srcs/constrs_1/new/exp_constraints.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.srcs/utils_1/imports/synth_1/overall_main.dcp}
+read_checkpoint -auto_incremental -incremental C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.srcs/utils_1/imports/synth_1/overall_main.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

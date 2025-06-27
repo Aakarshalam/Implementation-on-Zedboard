@@ -18,7 +18,26 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rs
 # IP: bd/design_1/ip/design_1_overall_axi_1_0/design_1_overall_axi_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_overall_axi_1_0 || ORIG_REF_NAME==design_1_overall_axi_1_0} -quiet] -quiet
 
+# IP: c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_ps7_0_axi_periph_imp_auto_pc_0/design_1_ps7_0_axi_periph_imp_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ps7_0_axi_periph_imp_auto_pc_0 || ORIG_REF_NAME==design_1_ps7_0_axi_periph_imp_auto_pc_0} -quiet] -quiet
 
-# XDC: c:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_processing_system7_0_0 || ORIG_REF_NAME==design_1_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_100M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_100M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_overall_axi_1_0/src/clk_wiz_0/clk_wiz_0_ooc.xdc
+
+# XDC: c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/ip/design_1_ps7_0_axi_periph_imp_auto_pc_0/design_1_ps7_0_axi_periph_imp_auto_pc_0_ooc.xdc
+
+# XDC: c:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.gen/sources_1/bd/design_1/design_1_ooc.xdc

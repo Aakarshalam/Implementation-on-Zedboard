@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/impl_1/design_1_wrapper.tcl"
+  variable script "C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.runs/impl_1/design_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -108,7 +108,7 @@ set rc [catch {
   set_param chipscope.maxJobs 6
   set_param runs.launchOptions { -jobs 15  }
   open_checkpoint design_1_wrapper_routed.dcp
-  set_property webtalk.parent_dir {C:/Aakarsh Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.cache/wt} [current_project]
+  set_property webtalk.parent_dir C:/Aakarsh_Files/Implementation-on-Zedboard/Neg_exp_with_ip/negative_exponential/negative_exponential.cache/wt [current_project]
 set_property TOP design_1_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
