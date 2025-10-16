@@ -9,4 +9,4 @@ This repository contains a complete **end-to-end implementation** of a custom RT
 - exp_neg_with_ip contains the HW code, Zynq7_series contains the SW code in the helloworld.c file.
 - Includes **simulation testbenches** wherever applicable  
 
-Have a great read and happy hacking! 😄  
+Have a great read and happy hacking!
